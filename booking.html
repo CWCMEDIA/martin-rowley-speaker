@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Martin Rowley - Professional Speaker Booking</title>
+    <meta name="description" content="Book Martin Rowley for your event. Professional after-dinner speaker specializing in motorsport, crime, history, and the British motor industry.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="booking.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <a href="index.html"><h2>Martin Rowley</h2></a>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="index.html#talks">Talks</a></li>
+                <li><a href="index.html#about">About</a></li>
+                <li><a href="index.html#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="booking-hero">
+        <div class="container">
+            <div class="booking-hero-content">
+                <h1>Book Martin Rowley</h1>
+                <p class="hero-subtitle">Engage, Educate, and Entertain Your Audience</p>
+                <div class="hero-stats">
+                    <div class="stat">
+                        <span class="stat-number">500+</span>
+                        <span class="stat-label">Talks Delivered</span>
+                    </div>
+                    <div class="stat">
+                        <span class="stat-number">15+</span>
+                        <span class="stat-label">Years Experience</span>
+                    </div>
+                    <div class="stat">
+                        <span class="stat-number">98%</span>
+                        <span class="stat-label">Client Satisfaction</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Booking Form Section -->
+    <section class="booking-form-section">
+        <div class="container">
+            <div class="booking-layout">
+                <!-- Form Column -->
+                <div class="booking-form-column">
+                    <div class="form-container">
+                        <h2>Request a Booking</h2>
+                        <p class="form-intro">Fill out the form below and Martin will get back to you within 24 hours to discuss your event requirements.</p>
+                        
+                        <form class="booking-form" id="bookingForm">
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label for="firstName">First Name *</label>
+                                    <input type="text" id="firstName" name="firstName" required>
+                                </div>
+                                <div class="form-group">
+                                    <label for="lastName">Last Name *</label>
+                                    <input type="text" id="lastName" name="lastName" required>
+                                </div>
+                            </div>
+
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label for="email">Email Address *</label>
+                                    <input type="email" id="email" name="email" required>
+                                </div>
+                                <div class="form-group">
+                                    <label for="phone">Phone Number</label>
+                                    <input type="tel" id="phone" name="phone">
+                                </div>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="organization">Organization/Club Name *</label>
+                                <input type="text" id="organization" name="organization" required>
+                            </div>
+
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label for="eventType">Event Type *</label>
+                                    <select id="eventType" name="eventType" required>
+                                        <option value="">Select event type</option>
+                                        <option value="after-dinner">After Dinner Speech</option>
+                                        <option value="conference">Conference Presentation</option>
+                                        <option value="club-meeting">Club/Society Meeting</option>
+                                        <option value="corporate">Corporate Event</option>
+                                        <option value="charity">Charity Event</option>
+                                        <option value="wedding">Wedding Speech</option>
+                                        <option value="other">Other</option>
+                                    </select>
+                                </div>
+                                <div class="form-group">
+                                    <label for="audienceSize">Expected Audience Size</label>
+                                    <select id="audienceSize" name="audienceSize">
+                                        <option value="">Select size</option>
+                                        <option value="10-25">10-25 people</option>
+                                        <option value="25-50">25-50 people</option>
+                                        <option value="50-100">50-100 people</option>
+                                        <option value="100-200">100-200 people</option>
+                                        <option value="200+">200+ people</option>
+                                    </select>
+                                </div>
+                            </div>
+
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label for="eventDate">Event Date *</label>
+                                    <input type="date" id="eventDate" name="eventDate" required>
+                                </div>
+                                <div class="form-group">
+                                    <label for="eventTime">Event Time</label>
+                                    <input type="time" id="eventTime" name="eventTime">
+                                </div>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="venue">Venue/Location *</label>
+                                <input type="text" id="venue" name="venue" placeholder="e.g., The Grand Hotel, Manchester" required>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="talkTopic">Preferred Talk Topic</label>
+                                <select id="talkTopic" name="talkTopic">
+                                    <option value="">Select topic (optional)</option>
+                                    <option value="electric-cars">Electric Cars: Myths and the Facts</option>
+                                    <option value="criminal-justice">The Criminal Justice System: Is It Fit for Purpose?</option>
+                                    <option value="motor-industry">History of the British Motor Industry in the East Midlands</option>
+                                    <option value="custom">Custom topic (specify in message)</option>
+                                </select>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="speechDuration">Speech Duration</label>
+                                <select id="speechDuration" name="speechDuration">
+                                    <option value="">Select duration</option>
+                                    <option value="15-20">15-20 minutes</option>
+                                    <option value="20-30">20-30 minutes</option>
+                                    <option value="30-45">30-45 minutes</option>
+                                    <option value="45-60">45-60 minutes</option>
+                                    <option value="60+">60+ minutes</option>
+                                </select>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="budget">Budget Range</label>
+                                <select id="budget" name="budget">
+                                    <option value="">Select budget range</option>
+                                    <option value="under-100">Under £100</option>
+                                    <option value="100-200">£100-£200</option>
+                                    <option value="200-300">£200-£300</option>
+                                    <option value="300-500">£300-£500</option>
+                                    <option value="500+">£500+</option>
+                                    <option value="charity">Charity rate (negotiable)</option>
+                                </select>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="message">Additional Information</label>
+                                <textarea id="message" name="message" rows="5" placeholder="Tell us more about your event, any specific requirements, or questions you have for Martin..."></textarea>
+                            </div>
+
+                            <div class="form-group checkbox-group">
+                                <label class="checkbox-label">
+                                    <input type="checkbox" id="newsletter" name="newsletter">
+                                    <span class="checkmark"></span>
+                                    I would like to receive Martin's newsletter with speaking tips and industry insights
+                                </label>
+                            </div>
+
+                            <div class="form-group checkbox-group">
+                                <label class="checkbox-label">
+                                    <input type="checkbox" id="terms" name="terms" required>
+                                    <span class="checkmark"></span>
+                                    I agree to the <a href="#" class="terms-link">Terms and Conditions</a> and <a href="#" class="terms-link">Privacy Policy</a> *
+                                </label>
+                            </div>
+
+                            <button type="submit" class="btn btn-primary btn-large booking-submit">
+                                <span class="button-text">Send Booking Request</span>
+                                <span class="button-loading" style="display: none;">Sending...</span>
+                            </button>
+                        </form>
+                    </div>
+                </div>
+
+                <!-- Info Column -->
+                <div class="booking-info-column">
+                    <div class="info-card">
+                        <h3>Why Choose Martin?</h3>
+                        <ul class="feature-list">
+                            <li>
+                                <div class="feature-icon">🎯</div>
+                                <div class="feature-text">
+                                    <strong>Engaging Storytelling</strong>
+                                    <p>Captivating narratives that keep audiences on the edge of their seats</p>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="feature-icon">📚</div>
+                                <div class="feature-text">
+                                    <strong>Deep Expertise</strong>
+                                    <p>Decades of knowledge in motorsport, history, and criminal justice</p>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="feature-icon">🤝</div>
+                                <div class="feature-text">
+                                    <strong>Professional Service</strong>
+                                    <p>Reliable, punctual, and tailored to your event needs</p>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="feature-icon">💬</div>
+                                <div class="feature-text">
+                                    <strong>Authentic British Wit</strong>
+                                    <p>Charming humor that resonates with British audiences</p>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="info-card">
+                        <h3>Pricing Information</h3>
+                        <div class="pricing-info">
+                            <div class="price-item">
+                                <span class="price-label">Standard Talks</span>
+                                <span class="price-value">From £65</span>
+                            </div>
+                            <div class="price-item">
+                                <span class="price-label">Charity Events</span>
+                                <span class="price-value">Negotiable</span>
+                            </div>
+                            <div class="price-item">
+                                <span class="price-label">Travel Included</span>
+                                <span class="price-value">Derbyshire & Surrounding</span>
+                            </div>
+                        </div>
+                        <p class="pricing-note">All prices include preparation time and basic AV requirements. Custom topics available on request.</p>
+                    </div>
+
+                    <div class="info-card">
+                        <h3>What Happens Next?</h3>
+                        <div class="process-steps">
+                            <div class="step">
+                                <div class="step-number">1</div>
+                                <div class="step-text">
+                                    <strong>Submit Request</strong>
+                                    <p>Fill out the form with your event details</p>
+                                </div>
+                            </div>
+                            <div class="step">
+                                <div class="step-number">2</div>
+                                <div class="step-text">
+                                    <strong>Martin Responds</strong>
+                                    <p>Within 24 hours with availability and quote</p>
+                                </div>
+                            </div>
+                            <div class="step">
+                                <div class="step-number">3</div>
+                                <div class="step-text">
+                                    <strong>Confirm Details</strong>
+                                    <p>Discuss requirements and finalize booking</p>
+                                </div>
+                            </div>
+                            <div class="step">
+                                <div class="step-number">4</div>
+                                <div class="step-text">
+                                    <strong>Deliver Excellence</strong>
+                                    <p>Martin delivers an unforgettable talk</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="info-card contact-card">
+                        <h3>Need Help?</h3>
+                        <div class="contact-info">
+                            <p><strong>📞 Phone:</strong> 01246 123456</p>
+                            <p><strong>✉️ Email:</strong> martin@martinrowley.co.uk</p>
+                            <p><strong>📍 Location:</strong> Dronfield, Derbyshire</p>
+                        </div>
+                        <p class="contact-note">Available for bookings across Derbyshire, Yorkshire & the Midlands</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Martin Rowley</h3>
+                    <p>Public Speaker across Derbyshire, Yorkshire & the Midlands</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Contact</h4>
+                    <p>📞 01246 123456</p>
+                    <p>✉️ martin@martinrowley.co.uk</p>
+                    <p>📍 Dronfield, Derbyshire</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="index.html#talks">Talks</a></li>
+                        <li><a href="index.html#about">About</a></li>
+                        <li><a href="index.html#contact">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Martin Rowley. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="booking.js"></script>
+</body>
+</html>
